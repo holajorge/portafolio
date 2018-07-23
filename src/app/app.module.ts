@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {app_routing} from "./app.routes";
 // servicios
 import {InformacionService} from "./services/informacion.service";
+import {ProductosService} from './services/productos.service';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -22,7 +23,7 @@ import { ProductoComponent } from './components/producto/producto.component';
     app_routing,
     HttpClientModule
   ],
-  providers: [InformacionService],
+  providers: [InformacionService, ProductosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
