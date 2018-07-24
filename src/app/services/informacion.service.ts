@@ -31,7 +31,7 @@ export class InformacionService {
       .subscribe(data => {
         this.cargada = true;
         this.equipo = data;
-        console.log(data);
+
         this.cargada_sobre_nosotros = true;
       });
   }

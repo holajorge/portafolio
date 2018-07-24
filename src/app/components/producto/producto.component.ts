@@ -16,7 +16,7 @@ export class ProductoComponent  {
       this.productService.getIdProducto(parametro['id'])
         .subscribe( res => {
           this.cod = parametro['id'];
-          console.log(res);
+
           this.producto = res;
         });
     });
