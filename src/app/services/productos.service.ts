@@ -20,8 +20,11 @@ export class ProductosService {
         setTimeout( () => {
           this.cargando_p = false;
           this.productos = res;
-        }, 1500)
+        }, 1500);
       });
+  }
+  public getIdProducto(id:string){
+    return this.http.get(`https://paginaweb-a3abc.firebaseio.com/productos/${id}.json`);
   }
 
 }
