@@ -17,8 +17,10 @@ export class ProductosService {
     this.http.get('https://paginaweb-a3abc.firebaseio.com/productos_idx.json')
       .subscribe( res => {
         console.log(res);
-        this.cargando_p = false;
-        this.productos = res;
+        setTimeout( () => {
+          this.cargando_p = false;
+          this.productos = res;
+        }, 1500)
       });
   }
 
