@@ -6,7 +6,7 @@ import { HttpClient } from "@angular/common/http";
 })
 export class ProductosService {
 
-  productos:any[] = [];
+  productos:any = [];
   productos_filtrados:any[] = [];
   cargando_p:boolean = true;
 

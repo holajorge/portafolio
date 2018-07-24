@@ -8,6 +8,6 @@ import {InformacionService} from '../../services/informacion.service';
 export class FooterComponent  {
   year:number = new Date().getFullYear();
 
-  constructor(private infoService:InformacionService){}
+  constructor(public infoService:InformacionService){}
 
 }

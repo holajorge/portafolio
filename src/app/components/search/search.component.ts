@@ -9,7 +9,7 @@ import {ProductosService} from '../../services/productos.service';
 })
 export class SearchComponent  {
   termino:string = undefined;
-  constructor(private route:ActivatedRoute, private productService:ProductosService) {
+  constructor(private route:ActivatedRoute, public productService:ProductosService) {
     route.params.subscribe( parametro => {
       this.termino = parametro['termino'];
 
