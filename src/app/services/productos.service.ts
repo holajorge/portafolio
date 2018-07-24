@@ -14,10 +14,11 @@ export class ProductosService {
   }
   public cargar_productos(){
     this.cargando_p = true;
-    this.http.get('https://paginaweb-a3abc.firebaseio.com/productos.json')
+    this.http.get('https://paginaweb-a3abc.firebaseio.com/productos_idx.json')
       .subscribe( res => {
         console.log(res);
         this.cargando_p = false;
+        this.productos = res;
       });
   }
 
